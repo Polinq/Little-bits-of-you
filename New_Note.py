@@ -31,11 +31,6 @@ driver.find_element_by_name("password").send_keys("***")
 element = driver.find_element_by_id('passwordNext')
 driver.execute_script("arguments[0].click();", element)
 
-# driver.find_element_by_id("yDmH0d").send_keys('polina.sobolevskaya@eleken.co')
-# driver.find_element_by_class_name("ZFr60d").click()
-# driver.find_element_by_name("password").send_keys('xromosopiens')
-# driver.find_element_by_class_name("ZFr60d ").click()
-
 driver.implicitly_wait(10)
 
 driver.switch_to.window(window_before)
