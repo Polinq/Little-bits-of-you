@@ -25,13 +25,7 @@ driver.get(url)
 driver.find_element_by_id("identifierId").send_keys('polina.sobolevskaya@eleken.co')
 driver.find_element_by_id("identifierNext").click()
 driver.implicitly_wait(20)
-driver.find_element_by_name("password").send_keys("***")
-
-driver.find_element_by_id("identifierId").send_keys("***")
-driver.find_element_by_id("identifierNext").click()
-driver.implicitly_wait(20)
-driver.find_element_by_name("password").send_keys("***")
-
+driver.find_element_by_name("password").send_keys('xromosopiens')
 element = driver.find_element_by_id('passwordNext')
 driver.execute_script("arguments[0].click();", element)
 
@@ -59,3 +53,4 @@ add_button = ActionChains(driver).move_to_element(driver.find_element_by_class_n
 # dd_menu = driver.find_element_by_class_name('src-components-atoms-DropDown-styles-styles__dropdown').click()
 # logout = driver.find_element_by_xpath('//*[@id="root"]/div[1]/div[1]/div[3]/div[1]/ul/li[3]').click
 # driver.quit()
+
