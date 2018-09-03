@@ -22,10 +22,17 @@ driver.implicitly_wait(15)
 url = 'https://www.google.com/accounts/Login?hl=ja&continue=http://www.google.com.ua/' # https://www.google.com/accounts/Login?hl=ja&continue=http://www.google.co.jp
 driver.get(url)
 
+<<<<<<< HEAD
 driver.find_element_by_id("identifierId").send_keys('polina.sobolevskaya@eleken.co')
 driver.find_element_by_id("identifierNext").click()
 driver.implicitly_wait(20)
 driver.find_element_by_name("password").send_keys('xromosopiens')
+=======
+driver.find_element_by_id("identifierId").send_keys("***")
+driver.find_element_by_id("identifierNext").click()
+driver.implicitly_wait(20)
+driver.find_element_by_name("password").send_keys("***")
+>>>>>>> c42029a5af24bce27f9c20c01340c2d64972ec2b
 element = driver.find_element_by_id('passwordNext')
 driver.execute_script("arguments[0].click();", element)
 
