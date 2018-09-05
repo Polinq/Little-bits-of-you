@@ -21,10 +21,21 @@ window_before = driver.window_handles[0]
 window_after = driver.window_handles[1]
 driver.switch_to.window(window_after)
 driver.implicitly_wait(15)
+<<<<<<< HEAD
 driver.find_element_by_id("identifierId").send_keys('polina.sobolevskaya@eleken.co')
 driver.find_element_by_id("identifierNext").click()
 driver.implicitly_wait(15)
 driver.find_element_by_name("password").send_keys('xromosopiens')
+=======
+
+url = 'https://www.google.com/accounts/Login?hl=ja&continue=http://www.google.com.ua/' # https://www.google.com/accounts/Login?hl=ja&continue=http://www.google.co.jp
+driver.get(url)
+
+driver.find_element_by_id("identifierId").send_keys('polina.sobolevskaya@eleken.co')
+driver.find_element_by_id("identifierNext").click()
+driver.implicitly_wait(20)
+driver.find_element_by_name("password").send_keys('***')
+>>>>>>> aba98b1311ee1688749432ca140bf2727c85ddf2
 element = driver.find_element_by_id('passwordNext')
 driver.execute_script("arguments[0].click();", element)
 driver.implicitly_wait(10)
@@ -51,3 +62,10 @@ logout_btn = driver.find_element_by_css_selector('#root > div:nth-child(2) > div
 
 driver.quit()
 
+<<<<<<< HEAD
+=======
+# dd_menu = driver.find_element_by_class_name('src-components-atoms-DropDown-styles-styles__dropdown').click()
+# logout = driver.find_element_by_xpath('//*[@id="root"]/div[1]/div[1]/div[3]/div[1]/ul/li[3]').click
+# driver.quit()
+
+>>>>>>> aba98b1311ee1688749432ca140bf2727c85ddf2
